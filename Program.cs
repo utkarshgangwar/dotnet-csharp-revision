@@ -4,6 +4,11 @@ namespace HelloWorld
 {
     internal class Program
     {
+        // static int accessibleInt = 0;
+        // void TestMethod()
+        // {
+        //     Console.WriteLine(accessibleInt);
+        // }
         static void Main(string[] args)
         {
             // Variables
@@ -240,6 +245,117 @@ namespace HelloWorld
             //         Console.WriteLine("Not Equal");
             //         break;
             // }
+
+            // ------------------------- Loops -------------------------
+            // int[] instsToCompress = new int[] { 10, 15, 20, 25, 30, 12, 34 };
+
+            // DateTime startTime = DateTime.Now;
+
+            // int totalValue = 0;
+            // startTime = DateTime.Now;
+            // totalValue = instsToCompress[0] + instsToCompress[1] +
+            // instsToCompress[2] + instsToCompress[3] +
+            // instsToCompress[4] + instsToCompress[5] + instsToCompress[6];
+            // Console.WriteLine((DateTime.Now - startTime).TotalSeconds);
+            // Console.WriteLine(totalValue);
+
+            //146
+
+            // // ---------- for loop ----------
+            // totalValue = 0;
+            // startTime = DateTime.Now;
+            // for (int i = 0; i < instsToCompress.Length; i++)
+            // {
+            //     totalValue += instsToCompress[i];
+            // }
+            // Console.WriteLine((DateTime.Now - startTime).TotalSeconds);
+            // Console.WriteLine(totalValue);
+
+            // // ---------- foreach loop ----------
+            // totalValue = 0;
+            // startTime = DateTime.Now;
+            // foreach (int instToCompression in instsToCompress)
+            // {
+            //     totalValue += instToCompression;
+            // }
+            // Console.WriteLine((DateTime.Now - startTime).TotalSeconds);
+            // Console.WriteLine(totalValue);
+
+            // // ---------- while loop ----------
+            // totalValue = 0;
+            // startTime = DateTime.Now;
+            // int index = 0;
+            // while (index < instsToCompress.Length)
+            // {
+            //     totalValue += instsToCompress[index];
+            //     index++;
+            // }
+            // Console.WriteLine((DateTime.Now - startTime).TotalSeconds);
+            // Console.WriteLine(totalValue);
+
+            // // ---------- do while loop ----------
+            // totalValue = 0;
+            // startTime = DateTime.Now;
+            // index = 0;
+            // do
+            // {
+            //     totalValue += instsToCompress[index];
+            //     index++;
+            // } while (index < instsToCompress.Length);
+            // Console.WriteLine((DateTime.Now - startTime).TotalSeconds);
+            // Console.WriteLine(totalValue);
+
+            // ---------- sum method ----------
+            // totalValue = 0;
+            // startTime = DateTime.Now;
+            // totalValue = instsToCompress.Sum();
+            // Console.WriteLine((DateTime.Now - startTime).TotalSeconds);
+            // Console.WriteLine(totalValue);
+
+            // totalValue = 0;
+            // startTime = DateTime.Now;
+            // foreach (int instToCompression in instsToCompress)
+            // {
+            //     if (instToCompression > 20)
+            //     {
+            //         totalValue += instToCompression;
+            //     }
+            // }
+
+            // Console.WriteLine((DateTime.Now - startTime).TotalSeconds);
+            // Console.WriteLine(totalValue);
+
+
+            // ------------------------- Methods -------------------------
+            // startTime = DateTime.Now;
+            // totalValue = GetSum(instsToCompress);
+            // Console.WriteLine((DateTime.Now - startTime).TotalSeconds);
+            // Console.WriteLine(totalValue);
+
+            // int[] intsToCompress2 = new int[] { 23, 23, 53, 56, 83, 93 };
+            // startTime = DateTime.Now;
+            // totalValue = GetSum(intsToCompress2);
+            // Console.WriteLine((DateTime.Now - startTime).TotalSeconds);
+            // Console.WriteLine(totalValue);
+
+            // ------------------------- Scope -------------------------
+            // Console.WriteLine(accessibleInt);
+
+            // A static method can only access static attibutes.
+            // A non static method can access both static and non static attributes.
+            // Declare before using a accessible in a scope.
+
         }
+        // ------------------------- Methods -------------------------
+        // static private int GetSum(int[] compressibleIntArray)
+        // {
+        //     // int[] compressibleIntArray = new int[] { 10, 15, 20, 25, 30, 12, 34 };
+        //     int totalValue = 0;
+        //     foreach (int instToCompression in compressibleIntArray)
+        //     {
+        //         totalValue += instToCompression;
+        //     }
+        //     return totalValue;
+        // }
     }
 }
